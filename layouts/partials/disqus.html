@@ -3,7 +3,7 @@
   <div class="container">
     <aside><div id="disqus_thread"></div></aside>
   {{ if .Site.Params.Features.DisqusOnDemand }}
-    <div id="show_comments"><a id="load_comments" class="button is-link">Load comments</a></div>
+    <div id="show_comments"><a id="load_comments" class="button is-link">بازکردن دیدگاه ها</a></div>
   {{ end }}
     <script type="text/javascript">
       var disqus_shortname = '{{ .Site.DisqusShortname }}';
@@ -29,7 +29,7 @@
   {{ end }}
 
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <noscript>لطفا برای دیدن <a href="https://disqus.com/?ref_noscript" rel="nofollow">دیدگاه ها قدرت گرفته از دیسکوس</a>جاوااسکریپت مرورگر خود را فعال کنید.</noscript>
   </div>
 </section>
 {{ end }}
