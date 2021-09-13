@@ -11,7 +11,7 @@
     {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
     {{ range sort .Paginator.Pages }}
     <article>
-      <div class="subtitle tags is-6 is-pulled-right">
+      <div class="subtitle tags is-6 is-pulled-left">
         {{ if .Params.tags }}
         {{ partial "tags" .Params.tags }}
         {{ end }}

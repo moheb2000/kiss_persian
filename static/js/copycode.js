@@ -5,18 +5,18 @@ function addCopyButtons(clipboard) {
         var button = document.createElement('button');
         button.className = 'copy-code-button';
         button.type = 'button';
-        button.innerText = 'Copy';
+        button.innerText = 'کپی';
         button.addEventListener('click', function () {
             clipboard.writeText(codeBlock.innerText).then(function () {
                 /* Chrome doesn't seem to blur automatically,
                    leaving the button in a focused state. */
                 button.blur();
-                button.innerText = 'Copied!';
+                button.innerText = 'کپی شد!';
                 setTimeout(function () {
-                    button.innerText = 'Copy';
+                    button.innerText = 'کپی';
                 }, 2000);
             }, function (error) {
-                button.innerText = 'Error';
+                button.innerText = 'خطا';
             });
         });
         var pre = codeBlock.parentNode;
